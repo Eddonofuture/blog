@@ -11,7 +11,7 @@
 <footer>
 	<?php include('footer.php'); ?>
 	
-	<?php ?>
+	<?php //yo digo ola k ase?>
 </footer>
 </body>
 </html>
