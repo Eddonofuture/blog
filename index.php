@@ -1,5 +1,5 @@
 <?php include('header.php'); ?>
-<?php //empezar ocupar strip_tags() para evitar hack?>
+<?php //empezar ocupar strip_tags() para evitar hack, quiero probar las pull?>
 <section id="contenido">
 	<?php include('body.php'); ?>
 </section>
