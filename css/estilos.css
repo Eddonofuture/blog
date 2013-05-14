@@ -1,0 +1,443 @@
+/*
+ Author: Felipe Veloso Novoa
+ Contacto: f.veloso.n@gmail.com
+ Sitio: Nofuture.cl
+ Version: 1.0
+ */
+
+/*Base Css*/
+@import url(http://fonts.googleapis.com/css?family=Unkempt:700);
+*{
+	
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+article,figcaption,figure,footer,header,hgroup,nav, section{
+	
+	display: block;
+	
+}
+
+audio, iframe ,img,video,{
+	
+	max-width: 100%;
+	
+}
+
+a{
+	
+	color: #F70;
+	font: bold;
+	text-decoration: none;	
+}
+
+/*Etiquetas*/
+
+section#contenido{
+	
+	margin: 0px auto;
+	max-width: 95%;
+	text-align: center;
+	margin-bottom: 140px;
+	
+}
+
+header{
+
+	max-width: 100%;
+	margin-bottom: 20px;
+
+}
+
+footer{
+
+	max-width: 100%;
+	
+	text-align: center;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:120px; 
+	background-color:#0081C2;
+	
+}	
+
+nav{
+	
+	text-align: right;
+	width: 60%;
+	
+}
+
+nav, div#logo{
+	
+	display: inline-block;
+	max-width: 100%;
+	text-align: right;
+	vertical-align: middle;
+	
+}
+
+nav ul{
+	
+	list-style: none;
+	
+}
+
+nav li{
+	
+	display: inline-block;
+	padding: 5px;
+	
+}
+
+nav a{
+	
+	font-family: 'Unkempt', cursive;
+	border: 1px solid #4513E6;
+	padding: 5px;
+	transition: all 0.5s linear; 
+	
+}
+
+nav a:hover{
+	
+	border: 2px dashed #F70;
+	background: #000000;
+	color:   #FFFFFF;
+}
+
+section#cuerpo,section#cuerporecurso, aside{
+	
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 100%;
+	width: 70%;
+	vertical-align: top;
+
+}
+
+h2{
+	
+	font-family: 'Unkempt', cursive;
+	font-weight: bold;
+	
+}
+
+article,.comentario{
+	
+	border: 2px #CCCCCC solid;
+	border-radius: 0.5em;
+	padding: 10px;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+aside{
+	
+	width: 20%;
+	border: 2px #CCCCCC solid;
+	text-align: left;
+	padding-left: 20px;
+	margin-left: 10px;
+}
+
+aside ul{
+	
+	list-style: none;
+}
+
+aside li{
+	
+	display: block;
+}
+
+aside a{
+	
+	font-family: 'Unkempt', cursive;
+	text-align: left;
+	padding-left: 20px;
+}
+
+form{
+	
+	width:280px;
+	display: block;
+	text-align: left;
+	
+}
+
+input , textarea{
+	
+	border: 1px solid #CCCCCC;
+	border-radius: 0.5em; 
+	
+}
+
+table{
+	
+	border: 2px solid #CCCCCC;
+
+}
+
+tr:nth-child(odd){
+	
+	background: #CCCCCC;
+	opacity: 0.6;
+	
+}
+
+td{
+	
+	padding: 10px 10px;
+	
+}
+
+/*ID*/
+
+div#logo{
+	
+	text-align: left;
+	width: 30%;
+	margin-left: 5%;
+	
+}
+
+#indicadores{
+	
+	border: 2px solid #CCCCCC;
+	border-radius: 0.5em;
+	width: 92%;
+	margin: 0 auto;	
+	margin-bottom: 10px;
+	display: block;
+}
+
+#indicadores p{
+	
+	display: inline;
+	padding-right: 70px;
+	
+}
+
+#cuerporecurso{
+	
+	text-align: left;
+	
+}
+
+#publicidad{
+	
+	margin-top: 20px;
+	
+}
+
+#socialmedia, #nubetags{
+	
+	display: inline-block;
+	text-align: left;
+	padding-left: 5%;
+	vertical-align: middle;
+}
+
+#socialmedia{
+	
+	width: 15%;
+}
+
+#nubetags{
+	
+	width: 70%;
+	
+}
+
+#footer{
+	
+	width: 95%;
+	display: inline-block;
+	margin-top: 5px;
+}
+
+/*Class*/
+	
+.offset3{
+	
+	margin-left: 30%;
+	
+}
+
+.clear{
+	
+	clear:all;
+	
+}
+
+.foto , .noticia{
+	
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.foto{
+	
+	width: 18%;
+		
+}
+
+.noticia{
+	
+	width: 80%;
+	
+}
+
+.fotorecurso, .recursoestilo{
+	
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: top;
+}
+
+.fotorecurso{
+	
+	width: 45%;
+	
+}
+
+.recursoestilo{
+	
+	width: 40%;
+	
+}
+
+.fecha, .autor{
+	
+	text-align: left;	
+	display: inline-block;
+	
+}
+
+.autor{
+	
+	font-weight: bold;
+	width: 100%;
+}
+
+.fecha{
+	margin-left: 20px;
+	font-weight: normal;
+	
+}
+
+.contenido{
+	
+	text-align: left;	
+	margin-bottom: 5px;
+	
+}
+
+.comentarios, .social, .tag{
+	
+	display: inline-block;
+	text-align: left;
+}
+
+.comentarios{
+	
+	width: 31%
+}
+
+.comentario{
+		
+	text-align: right;
+	width: 68%;
+}
+
+.contenedor_comentario{
+	
+	max-width: 100%
+	
+}
+
+.social{
+	
+	width: 31%	
+	
+}
+
+.tag{
+	
+	width: 31%	
+	
+}
+
+.tager{
+	
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+	background: #000000;
+	transform:rotate(5deg);
+	-webkit-transform:rotate(5deg);
+}
+
+.tager a{
+	
+		color: #0044CC;
+}
+
+.btn{
+	
+	border: 1px solid #003BB3;
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	box-shadow: 3px 3px 2px #ccc;
+	color: #FFFFFF;
+	font-size: 14px;
+	padding: 4px;
+		
+}
+
+.vertical{
+	
+	display: inline-block;
+	width: 31%;
+	
+}
+
+.textocentro{
+	
+	text-align: center;
+	
+}
+
+.formcontacto{
+	
+	vertical-align: top;
+}
+
+.paginacion{
+	
+	margin-top: 10px;
+	
+}
+
+.paginacionbtn{
+	
+	border: 1px solid #CCCCCC;
+	background: #000000;
+	color: #FFFFFF;
+	padding: 5px;
+	
+	
+}

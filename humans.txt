@@ -1,0 +1,15 @@
+/* TEAM */
+	Web-Master: Felipe veloso
+	Email: f.veloso.n@gmail.com
+
+	
+
+/* THANKS */
+
+		
+
+/* SITE */
+	Fecha Creacion: 06/05/2013
+	Lenguaje: Español / Ingles
+	Doctype:HTML5
+	IDE: Eclipse + Plug in Php
