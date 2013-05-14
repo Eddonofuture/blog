@@ -1,5 +1,5 @@
 <?php include('header.php'); ?>
-<?php //empezar ocupar strip_tags()?>
+<?php //empezar ocupar strip_tags() para evitar hack?>
 <section id="contenido">
 	<?php include('body.php'); ?>
 </section>
