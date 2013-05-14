@@ -10,6 +10,8 @@
 
 <footer>
 	<?php include('footer.php'); ?>
+	
+	<?php ?>
 </footer>
 </body>
 </html>
