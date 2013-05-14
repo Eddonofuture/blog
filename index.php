@@ -11,7 +11,7 @@
 <footer>
 	<?php include('footer.php'); ?>
 	
-	<?php ?>
+	<?php // yo digo tangnan?>
 </footer>
 </body>
 </html>
