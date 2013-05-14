@@ -11,7 +11,11 @@
 <footer>
 	<?php include('footer.php'); ?>
 	
+<<<<<<< HEAD
 	<?php //yo digo ola k ase?>
+=======
+	<?php // yo digo tangnan?>
+>>>>>>> refs/remotes/origin/master
 </footer>
 </body>
 </html>
