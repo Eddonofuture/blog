@@ -6,9 +6,9 @@ class Conectar{
 
 	public static function con(){
 
-		$con = mysql_connect("localhost","nofuture_bloger","Riraito1221");
+		$con = mysql_connect("localhost","root","");
 		mysql_query("SET NAMES 'utf-8'");
-		mysql_select_db("nofuture_bbdd_blog");
+		mysql_select_db("bbdd_blog");
 
 		return $con;
 
