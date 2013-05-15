@@ -1,7 +1,5 @@
 <?php 
 include_once 'class/class.php';
-$blog = new blog();
-$categorias =  $blog->get_categorias();
 $afiliados = $blog->get_afiliados();
 $tager = $blog->get_categorias();
 ?>
