@@ -48,18 +48,30 @@ $menubar =  $blog->get_menubar();
 <script src="js/prefixfree.min.js"></script>
 </head>
 <body>
+	<div class="contacto">
+		<ul>
+			<li><a href="">HOME</a></li>
+			<li><a href="">QUIENES SOMOS</a></li>
+			<li><a href="">SERVICIOS</a></li>
+			<li><a href="">CONTACTO</a></li>
+		</ul>
+
+	</div>
 	<header>
-		<div id="logo" align="left">
-			<a href="index.php"><img src="images/logo.png" /> </a>
+		<div class="head">
+			<div class="animacion"></div>
+			<div id="logo" align="left">
+				<a href="index.php"><img src="images/logo.png" /> </a>
+			</div>
+			<nav>
+				<ul>
+					<?php for($i = 0; $i<sizeof($menubar);$i++){ ?>
+					<li><a href="<?php echo $menubar[$i]['link']; ?>"><?php echo $menubar[$i]['nombre'];?>
+					</a></li>
+					<?php }?>
+				</ul>
+
+			</nav>
 		</div>
-		<nav>
-			<ul>
-				<?php for($i = 0; $i<sizeof($menubar);$i++){ ?>
-				<li><a href="<?php echo $menubar[$i]['link']; ?>"><?php echo $menubar[$i]['nombre'];?>
-				</a></li>
-				<?php }?>
-			</ul>
-
-		</nav>
-
 	</header>
+	<div class="clear"></div>
