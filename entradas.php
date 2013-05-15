@@ -51,13 +51,19 @@ if(sizeof($post_cat) != 0){
 				</div>
 
 				<div class="comentarios">
-					Comentarios:
-					<?php echo $cantidad_comentario ?>
+					<p>
+						<?php echo $cantidad_comentario ?>
+					</p>
+
 				</div>
-				<div class="social">me gusta</div>
-				<div class="tag">
-					Tag:
-					<?php echo $post_cat[$i]['categoria']?>
+				<div class="social">
+					<div class="fb-like"
+						data-href="http://www.nofuture.cl/<?php echo $texto."c".$post_cat[$i]["idpost"].".php"; ?>"
+						data-send="false" data-layout="button_count" data-width="450"
+						data-show-faces="false" data-font="trebuchet ms"></div>
+				</div>
+				<div class="tager">
+					<a><?php echo $post_cat[$i]['categoria']?> </a>
 				</div>
 			</div>
 		</article>

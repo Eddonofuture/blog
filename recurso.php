@@ -56,10 +56,18 @@
 				</div>
 
 				<div class="comentarios">
-					Comentarios:
-					<?php echo $cantidad_comentario ?>
+					<p>
+						<?php echo $cantidad_comentario ?>
+					</p>
+
 				</div>
-				<div class="social">me gusta</div>
+				<div class="social">
+					<div class="fb-like"
+						data-href="http://www.nofuture.cl/<?php echo $texto."c".$post[$i]["idpost"].".php"; ?>"
+						data-send="false" data-layout="button_count" data-width="450"
+						data-show-faces="false" data-font="trebuchet ms"></div>
+				</div>
+
 			</div>
 		</article>
 		<?php }?>
@@ -85,9 +93,9 @@
 			}
 			else{
 	?>
-		<a href="javascript:void(0)" class="paginacionbtn">Siguientes</a>
-		<?php }
-		?>
+			<a href="javascript:void(0)" class="paginacionbtn">Siguientes</a>
+			<?php }
+			?>
 		</div>
 	</section>
 	<aside>

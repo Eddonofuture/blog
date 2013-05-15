@@ -2,7 +2,7 @@
  Author: Felipe Veloso Novoa
  Contacto: f.veloso.n@gmail.com
  Sitio: Nofuture.cl
- Version: 1.0
+ Version: 2.0
  */
 
 /*Base Css*/
@@ -41,30 +41,28 @@ section#contenido{
 	margin: 0px auto;
 	max-width: 95%;
 	text-align: center;
-	margin-bottom: 140px;
+	margin-bottom: 20px;
 	
 }
 
 header{
 
-	margin-bottom: 20px;
 	width: 100%;
 	height: 200px;
-	background: #000;
-	
+	background: #FFF;
+	background: url('../images/textura.png');
+	margin-bottom: 5px;
 }
 
 footer{
 
 	max-width: 100%;
-	
 	text-align: center;
-	position:fixed;
 	bottom:0;
 	width:100%;
-	height:120px; 
-	background-color:#0081C2;
-	
+	height:50px; 
+	background-image: url('../images/textura.png');
+	background: #000000;
 }	
 
 nav{
@@ -80,7 +78,7 @@ nav, div#logo{
 	max-width: 100%;
 	text-align: right;
 	vertical-align: middle;
-	
+
 }
 
 nav ul{
@@ -132,8 +130,9 @@ h2{
 
 article,.comentario{
 	
-	border: 2px #CCCCCC solid;
-	border-radius: 0.5em;
+	border-bottom: 2px #CCCCCC solid;
+	border-right: 2px #CCCCCC solid;
+	border-radius: 0.2em;
 	padding: 10px;
 	text-align: left;
 	margin-bottom: 5px;
@@ -211,12 +210,13 @@ div#logo{
 
 #indicadores{
 	
-	border: 2px solid #CCCCCC;
-	border-radius: 0.5em;
-	width: 92%;
+	width: 100%;
+	height: 30px;
 	margin: 0 auto;	
 	margin-bottom: 10px;
+	text-align: center;
 	display: block;
+	background: url('../images/textura.png');
 }
 
 #indicadores p{
@@ -240,21 +240,21 @@ div#logo{
 
 #socialmedia, #nubetags{
 	
-	display: inline-block;
+	display: block;
 	text-align: left;
-	padding-left: 5%;
 	vertical-align: middle;
 }
 
-#socialmedia{
+#socialmedia.fb-like , #socialmedia.twitter-share-button{
 	
-	width: 15%;
+	display: inline-block;
+	width: 50%;
 }
 
 #nubetags{
 	
 	width: 70%;
-	
+	margin-bottom: 10px;
 }
 
 #footer{
@@ -262,6 +262,10 @@ div#logo{
 	width: 95%;
 	display: inline-block;
 	margin-top: 5px;
+	padding: 5px;
+	color: #FFFFFF;
+	vertical-align: middle;
+	
 }
 
 /*Class*/
@@ -306,13 +310,13 @@ div#logo{
 
 .fotorecurso{
 	
-	width: 45%;
+	width: 60%;
 	
 }
 
 .recursoestilo{
 	
-	width: 40%;
+	width: 35%;
 	
 }
 
@@ -339,7 +343,7 @@ div#logo{
 	
 	text-align: left;	
 	margin-bottom: 5px;
-	
+
 }
 
 .comentarios, .social, .tag{
@@ -350,7 +354,27 @@ div#logo{
 
 .comentarios{
 	
-	width: 31%
+	width: 31%;
+
+}
+
+.comentarios p{
+	
+	width: 12px;
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-8 */
+	transform:rotate(5deg);
+	-webkit-transform:rotate(5deg);
+	color: #0044CC;
 }
 
 .comentario{
@@ -382,7 +406,15 @@ div#logo{
 	display: inline-block;
 	padding: 5px;
 	border: 1px solid #CCCCCC;
-	background: #000000;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-8 */
 	transform:rotate(5deg);
 	-webkit-transform:rotate(5deg);
 }
@@ -437,9 +469,10 @@ div#logo{
 .paginacionbtn{
 	
 	border: 1px solid #CCCCCC;
-	background: #000000;
-	color: #FFFFFF;
-	padding: 5px;
+	background: #FFFFFF;
+	color: #0044CC;
+	padding: 5px 10px;
+	font-weight: bold;
 	
 	
 }
@@ -474,13 +507,12 @@ div#logo{
 	opacity: 0.7;
 }
 
-
 .animacion{
 	
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	background: #FFFFFF;
+	background: #F70;
 	position: relative;
 	-webkit-animation: pelota 10s infinite linear; 
 	
